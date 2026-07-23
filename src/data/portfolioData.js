@@ -15,10 +15,10 @@ import projectPlaceholder from '../assets/images/project-placeholder.svg'
 // PERFIL: información principal que aparece en la sección Hero
 // ----------------------------------------------------------------------------
 export const profileData = {
-  name: 'Juan Pérez',
-  title: 'Ingeniero de Software',
-  tagline: 'Construyo aplicaciones web robustas, desde la base de datos hasta la interfaz.',
-  location: 'Bogotá, Colombia',
+  name: 'Mónica Liliana Betancur',
+  title: 'Estudiante de Ingeniería de Sistemas',
+  tagline: 'Tenacidad',
+  location: 'Envigado, Colombia',
   // Para usar tu propia foto: reemplaza el archivo en src/assets/images/profile-placeholder.svg
   // (o agrega tu foto, ej. profile.jpg, e impórtala arriba y úsala aquí).
   photo: profilePlaceholder,
@@ -28,9 +28,9 @@ export const profileData = {
 // REDES SOCIALES Y CONTACTO: se usan en el Hero, la sección Contacto y el Footer
 // ----------------------------------------------------------------------------
 export const socialLinks = {
-  linkedin: 'https://linkedin.com/in/tu-usuario',
-  github: 'https://github.com/tu-usuario',
-  email: 'juan.perez@example.com',
+  linkedin: 'https://www.linkedin.com/in/liliana-betancur/',
+  github: 'https://github.com/MonicaLilianaBetancur',
+  email: 'liliana.betan@hotmail.com',
 }
 
 // ----------------------------------------------------------------------------
@@ -38,11 +38,14 @@ export const socialLinks = {
 // ----------------------------------------------------------------------------
 export const aboutData = {
   paragraph:
-    'Soy estudiante de último semestre de Ingeniería Informática, apasionado por el desarrollo web ' +
-    'y el diseño de software. Disfruto resolver problemas complejos dividiéndolos en partes simples, ' +
-    'y me interesa especialmente el desarrollo full-stack con JavaScript y Python. Actualmente busco ' +
-    'oportunidades de práctica profesional o primer empleo donde pueda seguir aprendiendo y aportar valor ' +
-    'a un equipo de desarrollo.',
+    'Gerente Comercial con 22 años de trayectoria liderando estrategias comerciales de alto impacto ' +
+    'en los sectores asegurador, bancario, garantías crediticias y salud corporativa. Amplia experiencia ' +
+    'liderando equipos de hasta 50 personas a nivel nacional, gestionando portafolios estratégicos de alto ' +
+    'valor y desarrollando relaciones institucionales con una base amplia de clientes corporativos en los ' +
+    'sectores financiero, cooperativo y solidario. Combino visión estratégica, orientación a resultados y ' +
+    'habilidades de relacionamiento institucional, con liderazgo en la construcción de CRM comercial desde ' +
+    'cero, implementación de CRM institucional y renovación de plataformas web corporativas. Actualmente ' +
+    'curso Ingeniería de Sistemas, consolidando un perfil híbrido entre negocio y tecnología.',
 }
 
 // ----------------------------------------------------------------------------
@@ -51,60 +54,25 @@ export const aboutData = {
 // Agrega o quita objetos de este array para actualizar la sección.
 // ----------------------------------------------------------------------------
 export const skillsData = [
-  { name: 'JavaScript', icon: '🟨' },
-  { name: 'React', icon: '⚛️' },
-  { name: 'Node.js', icon: '🟢' },
   { name: 'Python', icon: '🐍' },
-  { name: 'HTML5', icon: '🧱' },
-  { name: 'CSS / Tailwind', icon: '🎨' },
   { name: 'Git y GitHub', icon: '🔧' },
-  { name: 'SQL', icon: '🗄️' },
-  { name: 'Java', icon: '☕' },
-  { name: 'Docker', icon: '🐳' },
-  { name: 'Linux', icon: '🐧' },
-  { name: 'Trabajo en equipo', icon: '🤝' },
+  { name: 'VS Code', icon: '💻' },
+  { name: 'Excel / Pandas', icon: '📊' },
+  { name: 'Análisis de datos', icon: '📈' },
+  { name: 'Liderazgo de equipos', icon: '🤝' },
+  { name: 'CRM', icon: '🗂️' },
+  { name: 'Negociación', icon: '🤝' },
+  { name: 'Visión estratégica', icon: '🎯' },
 ]
 
 // ----------------------------------------------------------------------------
 // PROYECTOS: cada objeto es una tarjeta en la sección Proyectos.
 // Para agregar un proyecto nuevo, copia un objeto del array y edita sus valores.
 // Para quitar uno, simplemente elimina su objeto del array.
+// Sección dejada vacía intencionalmente: se irá llenando con los proyectos
+// del semestre a medida que avancen.
 // ----------------------------------------------------------------------------
-export const projectsData = [
-  {
-    id: 1,
-    title: 'Gestor de Tareas Colaborativo',
-    description:
-      'Aplicación web para crear y organizar tareas en equipo, con tableros estilo Kanban, ' +
-      'arrastrar y soltar, y notificaciones en tiempo real.',
-    image: projectPlaceholder,
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-    repoUrl: 'https://github.com/tu-usuario/gestor-tareas',
-    demoUrl: 'https://gestor-tareas-demo.vercel.app',
-  },
-  {
-    id: 2,
-    title: 'API REST de E-commerce',
-    description:
-      'Backend para una tienda en línea con autenticación de usuarios, catálogo de productos, ' +
-      'carrito de compras y procesamiento de pedidos.',
-    image: projectPlaceholder,
-    technologies: ['Python', 'Django REST', 'PostgreSQL', 'Docker'],
-    repoUrl: 'https://github.com/tu-usuario/ecommerce-api',
-    demoUrl: '',
-  },
-  {
-    id: 3,
-    title: 'Dashboard del Clima',
-    description:
-      'Panel interactivo que consume una API pública de clima y muestra pronósticos por ciudad ' +
-      'con gráficas de temperatura y humedad.',
-    image: projectPlaceholder,
-    technologies: ['React', 'Tailwind CSS', 'Chart.js'],
-    repoUrl: 'https://github.com/tu-usuario/dashboard-clima',
-    demoUrl: 'https://dashboard-clima-demo.vercel.app',
-  },
-]
+export const projectsData = []
 
 // ----------------------------------------------------------------------------
 // EXPERIENCIA Y EDUCACIÓN: timeline unificado, ordenado del más reciente al más
@@ -113,40 +81,44 @@ export const projectsData = [
 export const experienceData = [
   {
     id: 1,
-    type: 'work',
-    role: 'Practicante de Desarrollo de Software',
-    place: 'Tech Solutions S.A.S.',
-    period: '2025 - Actualidad',
-    description:
-      'Desarrollo de módulos frontend en React y mantenimiento de endpoints REST existentes. ' +
-      'Participación en revisiones de código y ceremonias ágiles (daily, retro, planning).',
+    type: 'education',
+    role: 'Ingeniería de Sistemas',
+    place: 'Institución Universitaria CEIPA',
+    period: 'En curso (2° año)',
+    description: 'Visión tecnológica aplicada a la gestión de negocios.',
   },
   {
     id: 2,
-    type: 'education',
-    role: 'Ingeniería Informática',
-    place: 'Universidad Colegio Mayor de Cundinamarca',
-    period: '2021 - 2026',
+    type: 'work',
+    role: 'Gerente de Relacionamiento – Clientes Preferenciales',
+    place: 'COLMÉDICOS | Medicina Laboral y Salud Corporativa B2B',
+    period: 'Julio 2025 - Actualidad',
     description:
-      'Formación en desarrollo de software, bases de datos, estructuras de datos y arquitectura ' +
-      'de aplicaciones web.',
+      'Gestión de relacionamiento con clientes corporativos preferenciales en el sector de salud laboral.',
   },
   {
     id: 3,
-    type: 'work',
-    role: 'Freelance - Desarrollo de sitios web',
-    place: 'Proyectos independientes',
-    period: '2023 - 2024',
-    description:
-      'Creación de sitios web para pequeños negocios locales usando HTML, CSS, JavaScript y WordPress.',
+    type: 'education',
+    role: 'Especialización en Finanzas Corporativas',
+    place: 'Universidad EIA',
+    period: '2018',
+    description: '',
   },
   {
     id: 4,
     type: 'education',
-    role: 'Curso de Desarrollo Web Full Stack',
-    place: 'Plataforma en línea',
-    period: '2022',
-    description: 'Curso intensivo de 6 meses sobre desarrollo web con JavaScript, React y Node.js.',
+    role: 'Administración de Empresas',
+    place: 'Universidad Pontificia Bolivariana (UPB)',
+    period: '2017',
+    description: '',
+  },
+  {
+    id: 5,
+    type: 'education',
+    role: 'Tecnóloga en Análisis de Costos y Presupuestos',
+    place: 'Instituto Tecnológico Metropolitano (ITM)',
+    period: '2004',
+    description: '',
   },
 ]
 
@@ -154,7 +126,7 @@ export const experienceData = [
 // CONTACTO: se usa en la sección Contacto (formulario -> mailto) y el Footer.
 // ----------------------------------------------------------------------------
 export const contactData = {
-  email: 'juan.perez@example.com',
-  phone: '+57 300 123 4567',
-  availability: 'Disponible para prácticas profesionales y proyectos freelance',
+  email: 'liliana.betan@hotmail.com',
+  phone: '+57 316 748 8167',
+  availability: 'Disponible para proyectos de práctica y oportunidades que integren negocio y tecnología',
 }
